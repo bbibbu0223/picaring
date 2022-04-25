@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/common.css" rel="stylesheet">
+    <link href="./style/header.css" rel="stylesheet">
+    <link href="./style/cart.css" rel="stylesheet">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/cart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>cart</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="menu_trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div>
+                <a href="aboutme.html">About us</a>
+                <a href="collection.html">Collection</a>
+                <a href="contact.html">Get help</a>
+            </div> 
+            
+        </nav>
+
+        <ul class="menu">
+            <li>
+                <a href="login.html">LOG IN</a>
+            </li>
+            <li>
+                <a>JOIN US</a>
+            </li>
+            <li>
+                <a>MY PAGE</a>
+            </li>
+            <li>
+                <a>CART</a>
+            </li>
+        </ul>
+
+        <img id="logo" src="./img/logo4.png">
+    </header>
+
+    <table class="cart-tb">
+        <caption class="cart-cap">Wish List</caption>
+        <thead>
+            <tr>
+                <th>번호</th><th>상품정보</th><th>수량</th><th>옵션</th><th>금액</th><th>비고</th>
+            </tr>
+        </thead>
+        <tbody class="liked-tbody">
+            <!-- json -->
+        </tbody>
+    </table>
+
+</table>
+<table class="cart-tb">
+    <caption class="cart-cap">Cart</caption>
+    <thead>
+        <tr>
+            <th>번호</th><th>상품정보</th><th>수량</th><th>옵션</th><th>금액</th><th>비고</th>
+        </tr>
+    </thead>
+    <tbody class="cart-tbody">
+        <!-- json -->
+    </tbody>
+</table>
+
+        <script>
+            function scrollRotate() {
+                let image = document.getElementById("logo");
+                image.style.transform = "translateX(-50%) rotate(" + window.pageYOffset/2 + "deg)";
+            }
+    
+            window.addEventListener('scroll',scrollRotate);
+    
+            let headElem = document.querySelector('header');
+            window.addEventListener('scroll', function () {
+                console.log('a');
+                headElem.style.position = 'fixed';
+            });
+        </script>
+</body>
+</html>

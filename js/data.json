@@ -1,0 +1,113 @@
+{
+    "list": [
+        {
+            "name": "Ciel",
+            "img": "./img/ring.jpg",
+            "tit": "커플링",
+            "price": "17,000₩",
+            "info": "925 정은의 심플한 디자인",
+            "type": "Ring",
+            "category": "Ring"
+        },
+        {
+            "name": "Lucas",
+            "img": "./img/ring.jpg",
+            "tit": "커플링",
+            "price": "22,000₩",
+            "info": "925 정은의 유니크한 디자인",
+            "type": "Ring",
+            "category": "Ring"
+        },
+        {
+            "name": "Ciel",
+            "img": "./img/ring.jpg",
+            "tit": "커플링",
+            "price": "17,000₩",
+            "info": "925 정은의 유니크한 디자인",
+            "type": "Ring",
+            "category": "Ring"
+        },
+        {
+            "name": "Lucas",
+            "img": "./img/ring.jpg",
+            "tit": "커플링",
+            "price": "18,000₩",
+            "info": "925 정은의 유니크한 디자인",
+            "type": "Ring",
+            "category": "Ring"
+        },
+        {
+            "name": "Ciel",
+            "img": "./img/nack.jpg",
+            "tit": "목걸이",
+            "price": "22,000₩",
+            "info": "925 정은의 심플한 디자인",
+            "type": "necklace",
+            "category": "necklace"
+        },
+        {
+            "name": "Lucas ",
+            "img": "./img/nack.jpg",
+            "tit": "목걸이",
+            "price": "20,000₩",
+            "info": "925 정은의 심플한 디자인",
+            "type": "necklace",
+            "category": "necklace"
+        },
+        {
+            "name": "Lucas ",
+            "img": "./img/nack.jpg",
+            "tit": "목걸이",
+            "price": "20,000₩",
+            "info": "925 정은의 심플한 디자인",
+            "type": "necklace",
+            "category": "necklace"
+        },
+        {
+            "name": "Lucas ",
+            "img": "./img/nack.jpg",
+            "tit": "목걸이",
+            "price": "20,000₩",
+            "info": "925 정은의 심플한 디자인",
+            "type": "necklace",
+            "category": "necklace"
+        },
+        {
+            "name": "Ciel",
+            "img": "./img/packshot.jpg",
+            "tit": "팔찌",
+            "price": "22,000₩",
+            "info": "925 정은의 유니크한 디자인",
+            "type": "bracelet",
+            "category": "bracelet"
+        },
+        {
+            "name": "Lucas",
+            "img": "./img/packshot.jpg",
+            "tit": "팔찌",
+            "price": "20,000₩",
+            "info": "925 정은의 유니크한 디자인",
+            "type": "bracelet",
+            "category": "bracelet"
+        },
+        {
+            "name": "Ciel",
+            "img": "./img/packshot.jpg",
+            "tit": "팔찌",
+            "price": "22,000₩",
+            "info": "925 정은의 유니크한 디자인",
+            "type": "bracelet",
+            "category": "bracelet"
+        },
+        {
+            "name": "Ciel",
+            "img": "./img/packshot.jpg",
+            "tit": "팔찌",
+            "price": "22,000₩",
+            "info": "925 정은의 유니크한 디자인",
+            "type": "bracelet",
+            "category": "bracelet"
+        }
+    ]
+
+}

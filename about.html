@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link href="./style/about.css" rel="stylesheet">
+    <link type="text/css" href="./style/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <link href="https://unpkg.com/swiper/css/swiper.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/multislider.min.js"></script>
+</head>
+<body>
+    <nav>
+        <!--Navbar has two part the top one and the bottom one-->
+        <!--Here is top one and in this part I put logo, my account part, and the shopping cart-->
+        <div class="navbar-top">
+            <div class="searchbar">
+                    <form action="#">
+                        <input type="search" placeholder="" />
+                        <i class="fa fa-search" id="search-icon"></i>
+                    </form>
+                </div>
+            <div>
+                <!--My account part-->
+                <div class="account">
+                    <a href="login.html">
+                        <button class="account-btn">
+                            <i class="fas fa-user-alt"></i>
+                        </button>
+                        <!-- <span class="account-text">My account</span> -->
+                    </a>
+                    <!--When we click the btnShowAccountInfo this section will be displayed-->
+                </div>
+                
+                <div>
+                    <!-- <button id="menuButton"><i class="fas fa-bars"></i></button> -->
+                    <!--Logo-->
+                    <a href="index.html" class="logo">
+                        <img src="./img/logo.png" style="width: 50%; height: 50%;">
+                    </a>
+                </div>
+                <!--Shopping cart-->
+                <div class="shopping-cart">
+                    <div class="sum-prices">
+                        <!--Shopping cart logo-->
+                        <i class="fas fa-shopping-cart shoppingCartButton"></i>
+                        <!--The total prices of products in the shopping cart -->
+                        <h6 id="sum-prices"></h6>
+                    </div>
+                </div>
+                <!-- <div class="navbar" id="navbar"> -->
+                <!-- The searchbar which will be in the right side of the links -->
+                
+            </div>
+        </div>
+        </div>
+        <!-- Navbar bottom part -->
+        <!-- Here I put the links to the other pages or nav links -->
+        <div class="navbar" id="navbar">
+            <div class="links">
+                <ul>
+                    <li class="nav-links">
+                        <a href="" class="link">About Us</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="collection.html" class="link">Collection</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="" class="link">Review</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="producstOnCart hide">
+                <div class="overlay"></div>
+                <div class="top">
+                    <button id="closeButton">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                    <h3>Cart</h3>
+                </div>
+                <ul id="buyItems">
+                    <h4 class="empty">장바구니가 비었습니다</h4>
+                <!-- <li class="buyItem">
+                    <img src="Images/producs-images/Mobiles/galaxynote10.png">
+                    <div>
+                        <h5>Products Name</h5>
+                        <h6>₩199</h6>
+                        <div>
+                            <button>-</button>
+                            <span class="countOfProduct">1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </li> -->
+                </ul>
+                <button class="btn checkout hidden">Check out</button>
+            </div>
+    </nav>
+
+    <div class="intro">
+        <img src="./img/roman-kraft-vm3sIDFsKqM-unsplash.jpg" style="width: 50%; height: 80%;">
+        <p>Pica Ring은 한 사람, 한 사람을 생각하며 만드는 주문제작 커플링입니다.<br>진심을 보다 깊게 전할 수 있게하는 것이 저희의 모토입니다.</p>
+    </div>
+
+    <footer>
+        <div class="footer-second">
+            <div class="footer-column-1">
+                <h3>News</h3>
+                <a href="#"></a>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">dolor sit</a>
+            </div>
+            <div class="footer-column-2">
+                <h3>Customer service</h3>
+                <a href="#">Contact</a>
+                <a href="#">Track your order</a>
+                <a href="#">terms of purchase</a>
+                <a href="#">common questions</a>
+            </div>
+            <div class="footer-column-3">
+                <h3>About us</h3>
+                <a href="#">Who we are</a>
+                <a href="#">Our Services</a>
+                <a href="#">Events</a>
+                <a href="#">Data protection</a>
+            </div>
+        </div>
+        <ul class="footer-last">
+            <li>
+                <p><i class="fab fa-cc-mastercard"></i></p>
+            </li>
+            <li>
+                <p><i class="fab fa-cc-paypal"></i></p>
+            </li>
+            <li>
+                <p><i class="fab fa-cc-visa"></i></p>
+            </li>
+            <li>
+                <p><i class="fab fa-cc-amex"></i></p>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

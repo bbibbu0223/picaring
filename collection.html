@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/common.css" rel="stylesheet">
+    <link href="./style/collection.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="https://unpkg.com/swiper/css/swiper.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/multislider.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/collection.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Collection</title>
+</head>
+<body>
+    <nav>
+        <!--Navbar has two part the top one and the bottom one-->
+        <!--Here is top one and in this part I put logo, my account part, and the shopping cart-->
+        <div class="navbar-top">
+            <div class="searchbar">
+                    <form action="#">
+                        <input type="search" placeholder="" />
+                        <i class="fa fa-search" id="search-icon"></i>
+                    </form>
+                </div>
+            <div>
+                <!--My account part-->
+                <div class="account">
+                    <a href="login.html">
+                        <button class="account-btn">
+                            <i class="fas fa-user-alt"></i>
+                        </button>
+                        <!-- <span class="account-text">My account</span> -->
+                    </a>
+                    <!--When we click the btnShowAccountInfo this section will be displayed-->
+                </div>
+                
+                <div>
+                    <!-- <button id="menuButton"><i class="fas fa-bars"></i></button> -->
+                    <!--Logo-->
+                    <a href="index.html" class="logo">
+                        <img src="./img/logo.png" style="width: 50%; height: 50%;">
+                    </a>
+                </div>
+                <!--Shopping cart-->
+                <div class="shopping-cart">
+                    <div class="sum-prices">
+                        <!--Shopping cart logo-->
+                        <i class="fas fa-shopping-cart shoppingCartButton"></i>
+                        <!--The total prices of products in the shopping cart -->
+                        <h6 id="sum-prices"></h6>
+                    </div>
+                </div>
+                <!-- <div class="navbar" id="navbar"> -->
+                <!-- The searchbar which will be in the right side of the links -->
+                
+            </div>
+        </div>
+        </div>
+        <!-- Navbar bottom part -->
+        <!-- Here I put the links to the other pages or nav links -->
+        <div class="navbar" id="navbar">
+            <div class="links">
+                <ul>
+                    <li class="nav-links">
+                        <a href="" class="link">About Us</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="collection.html" class="link">Collection</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="" class="link">Review</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="producstOnCart hide">
+                <div class="overlay"></div>
+                <div class="top">
+                    <button id="closeButton">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                    <h3>Cart</h3>
+                </div>
+                <ul id="buyItems">
+                    <h4 class="empty">장바구니가 비었습니다</h4>
+                <!-- <li class="buyItem">
+                    <img src="Images/producs-images/Mobiles/galaxynote10.png">
+                    <div>
+                        <h5>Products Name</h5>
+                        <h6>₩199</h6>
+                        <div>
+                            <button>-</button>
+                            <span class="countOfProduct">1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </li> -->
+                </ul>
+                <button class="btn checkout hidden">Check out</button>
+            </div>
+    </nav>
+
+    <article class="list">
+        <h2> Collection </h2>
+        <div class="category">
+            <p data-key="category" data-value="Ring">Ring</p>
+            <p data-key="category" data-value="necklace">necklace</p>
+            <p data-key="category" data-value="bracelet">Bracelet</p>
+        </div>
+        <ul class="ring">
+            <!-- <li></li> -->
+        </ul>
+    </article>
+
+    <script src="./js/cart.js"></script>
+    <!-- <script>
+        function scrollRotate() {
+            let image = document.getElementById("logo");
+            image.style.transform = "translateX(-50%) rotate(" + window.pageYOffset/2 + "deg)";
+        }
+
+        window.addEventListener('scroll',scrollRotate);
+
+        let headElem = document.querySelector('header');
+        window.addEventListener('scroll', function () {
+            console.log('a');
+            headElem.style.position = 'fixed';
+        });
+    </script> -->
+</body>
+</html>

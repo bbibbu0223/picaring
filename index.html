@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" href="./style/index.css" rel="stylesheet" />
+    <link type="text/css" href="./style/common.css" rel="stylesheet" />
+    <link type="text/css" href="./style/header.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="https://unpkg.com/swiper/css/swiper.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/multislider.min.js"></script>
+    <title>Pica Ring</title>
+</head>
+<body>
+    <header>
+            <nav>
+                <a class="menu_trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <div>
+                    <a href="aboutme.html">About us</a>
+                    <a href="collection.html">Collection</a>
+                    <a href="contact.html">Get help</a>
+                </div> 
+                
+            </nav>
+        </header>
+
+    <!--Navbar-->
+    <nav>
+        <!--Navbar has two part the top one and the bottom one-->
+        <!--Here is top one and in this part I put logo, my account part, and the shopping cart-->
+        <div class="navbar-top">
+            <div class="searchbar">
+                <form action="#">
+                    <input type="search" placeholder="" />
+                    <i class="fa fa-search" id="search-icon"></i>
+                </form>
+            </div>
+        <div>
+        <!--My account part-->
+        <div class="account">
+            <a href="login.html">
+                <button class="account-btn">
+                    <i class="fas fa-user-alt"></i>
+                </button>
+                <!-- <span class="account-text">My account</span> -->
+            </a>
+                <!--When we click the btnShowAccountInfo this section will be displayed-->
+        </div>
+
+        <div>
+            <!-- <button id="menuButton"><i class="fas fa-bars"></i></button> -->
+            <!--Logo-->
+            <a href="index.html" class="logo">
+                <img src="./img/logo.png" style="width: 50%; height: 50%;">
+            </a>
+        </div>
+        <!--Shopping cart-->
+            <div class="shopping-cart">
+                <div class="sum-prices">
+                    <!--Shopping cart logo-->
+                    <i class="fas fa-shopping-cart shoppingCartButton"></i>
+                    <!--The total prices of products in the shopping cart -->
+                    <h6 id="sum-prices"></h6>
+                </div>
+            </div>
+            <!-- <div class="navbar" id="navbar"> -->
+            <!-- The searchbar which will be in the right side of the links -->
+            </div>
+        </div>
+        </div>
+        <!-- Navbar bottom part -->
+        <!-- Here I put the links to the other pages or nav links -->
+        <div class="navbar" id="navbar">
+            <div class="links">
+                <ul>
+                    <li class="nav-links">
+                        <a href="about.html" class="link">About Us</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="collection.html" class="link">Collection</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="" class="link">Review</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="producstOnCart hide">
+                <div class="overlay"></div>
+                <div class="top">
+                    <button id="closeButton">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                    <h3>Cart</h3>
+                </div>
+                <ul id="buyItems">
+                    <h4 class="empty">장바구니가 비었습니다</h4>
+                <!-- <li class="buyItem">
+                    <img src="Images/producs-images/Mobiles/galaxynote10.png">
+                    <div>
+                        <h5>Products Name</h5>
+                        <h6>₩199</h6>
+                        <div>
+                            <button>-</button>
+                            <span class="countOfProduct">1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </li> -->
+                </ul>
+                <button class="btn checkout hidden">Check out</button>
+            </div>
+    </nav>
+
+    <main>
+        <div class="section1">
+            <h1>Pica Ring</h1>
+            <p class="subtxt">The one and only ring<br>made for your loved one</p>
+            <p class="left-quotes">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px"
+                    viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+    
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffff" stroke="none">
+                        <path d="M1555 4727 c-99 -61 -386 -268 -475 -343 -98 -81 -270 -258 -350
+                        -359 -284 -358 -504 -858 -624 -1415 -84 -390 -126 -907 -96 -1175 60 -529
+                        444 -949 970 -1062 118 -25 362 -25 480 0 248 54 445 161 620 336 233 234 352
+                        518 353 846 1 162 -11 247 -54 383 -159 499 -623 841 -1144 844 -131 0 -238
+                        -13 -340 -42 -78 -22 -76 -34 -36 145 103 460 293 930 586 1450 257 456 267
+                        489 110 392z" />
+                        <path d="M4285 4754 c-74 -38 -359 -237 -490 -342 -164 -130 -360 -342 -487
+                        -527 -387 -560 -619 -1388 -621 -2215 -1 -216 2 -257 21 -346 127 -590 647
+                        -997 1239 -971 312 14 577 126 799 339 198 191 318 425 359 703 36 245 0 476
+                        -110 701 -170 349 -476 587 -857 665 -175 35 -437 24 -577 -26 -24 -8 -46 -13
+                        -48 -11 -6 5 21 146 48 249 116 458 287 868 584 1396 161 286 195 352 195 379
+                        0 26 -14 28 -55 6z" />
+                    </g>
+                </svg>
+            </p>
+    
+            <p class="main-text">One and<br>only<br>just for<br>you</p>
+    
+            <div class="background"></div>
+    
+            <p class="right-quotes">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px"
+                    viewBox="0 0 512.000000 512.000000" reserveAspectRatio="xMidYMid meet">
+    
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffff" stroke="none">
+                        <path d="M1075 4763 c-11 -2 -56 -11 -100 -19 -580 -111 -1008 -663 -972
+                        -1253 34 -563 429 -1019 979 -1132 175 -35 437 -24 577 26 24 8 46 13 48 11 6
+                        -5 -21 -146 -48 -249 -116 -458 -287 -868 -584 -1396 -162 -289 -195 -352
+                        -195 -380 0 -46 58 -15 315 167 208 148 279 205 399 321 270 263 476 579 635
+                        978 199 499 303 1049 304 1613 1 216 -2 257 -21 346 -124 575 -622 979 -1201
+                        973 -64 -1 -125 -3 -136 -6z" />
+                        <path d="M3755 4764 c-11 -3 -56 -12 -100 -20 -232 -45 -440 -158 -615 -333
+                        -233 -234 -352 -518 -353 -846 -1 -162 11 -247 54 -383 159 -499 623 -841
+                        1144 -844 131 0 238 13 340 42 78 22 76 34 36 -145 -103 -460 -293 -930 -586
+                        -1450 -257 -456 -267 -489 -110 -392 99 61 386 268 475 343 98 81 270 258 350
+                        359 284 358 504 858 624 1415 84 390 126 907 96 1175 -60 525 -439 943 -960
+                        1060 -73 16 -351 30 -395 19z" />
+                    </g>
+                </svg>
+            </p>
+    
+            <div class="box">
+                <img class="mainimg" src="./img/angelica-echeverry-mI82mfLu538-unsplash.jpg">
+            </div>
+    
+            <img class="img1" src="./img/img.png">
+    
+            <div class="box2">
+                <img class="img2" src="./img/joeyy-lee-onU-LlrPs8I-unsplash.jpg">
+            </div>
+        </div>
+
+        <section class="main-section">
+            <div class="product-container">
+                <h3>New Collection</h3>
+                <div class="products">
+                    <div class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="./img/ring.jpg" alt="popular labtops and computers" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="1">
+                                        <i class="fas fa-cart-plus"></i>Add
+                                        to cart
+                                    </button>
+                                    <a href="sub.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Ciel</h4>
+                                <!-- <span class="stars"></span> -->
+                                <p>
+                                    925 정은을 소재로한 심플한 디자인의 커플링
+                                </p>
+                                <h6 class="price">
+                                    ₩<span class="priceValue">17000</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="./img/nack.jpg" alt="popular labtops and computers" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="2">
+                                        <i class="fas fa-cart-plus"></i>Add
+                                        to cart
+                                    </button>
+                                    <a href="sub.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Lucas</h4>
+                                <!-- <span class="stars"></span> -->
+                                <p>
+                                    925 정은을 소재로한 심플한 디자인의 목걸이
+                                </p>
+                                <h6 class="price">
+                                    ₩<span class="priceValue">22000</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="./img/packshot.jpg" alt="popular labtops and computers" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="3">
+                                        <i class="fas fa-cart-plus"></i>Add
+                                        to cart
+                                    </button>
+                                    <a href="sub.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Lucas</h4>
+                                <!-- <span class="stars"></span> -->
+                                <p>
+                                    925 정은을 소재로한 심플한 디자인의 팔찌
+                                </p>
+                                <h6 class="price">
+                                    ₩<span class="priceValue">20000</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="./img/ring.jpg" alt="popular labtops and computers" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="4">
+                                        <i class="fas fa-cart-plus"></i>Add
+                                        to cart
+                                    </button>
+                                    <a href="sub.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Ciel</h4>
+                                <!-- <span class="stars"></span> -->
+                                <p>
+                                    925 정은을 소재로한 심플한 디자인의 커플링
+                                </p>
+                                <h6 class="price">
+                                    ₩<span class="priceValue">18000</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-section">
+            <div class="pop-mobiles">
+                <div class="pop-mobiles-1">
+                    <figure>
+                        <img src="./img/kate-bezzubets-IGw-F6jQ6M8-unsplash.jpg" />
+                    </figure>
+                    <div>
+                        <h2>New Collection</h2>
+                        <p>
+                            로맨틱한 로즈골드 소재의 새로운 팔찌, Lucas를 지금 만나보세요.
+                        </p>
+                        <h4>₩11,000</h4>
+                        <a href="sub.html" class="btn">Buy now<i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <h3>Best Collection</h3>
+                <div class="pop-mobiles-2">
+                    <ul class="products">
+                        <li class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img src="./img/ring.jpg" alt="popular mobiles" />
+                                    <div class="product-over">
+                                        <button class="btn btn-small addToCart" data-product-id="5">
+                                            <i class="fas fa-cart-plus"></i>Add to cart
+                                        </button>
+                                        <a href="sub.html" class="btn btn-small">More Info</a>
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Ciel</h4>
+                                    <!-- <span class="stars"></span> -->
+                                    <h4 class="price">
+                                        ₩<span class="priceValue">18000</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img src="./img/packshot.jpg" alt="popular mobiles" />
+                                    <div class="product-over">
+                                        <button class="btn btn-small addToCart" data-product-id="6">
+                                            <i class="fas fa-cart-plus"></i>Add to cart
+                                        </button>
+                                        <a href="sub.html" class="btn btn-small">More Info</a>
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Lucas</h4>
+                                    <!-- <span class="stars"></span> -->
+                                    <h4 class="price">
+                                        ₩<span class="priceValue">18000</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img src="./img/nack.jpg" alt="popular mobiles" />
+                                    <div class="product-over">
+                                        <button class="btn btn-small addToCart" data-product-id="7">
+                                            <i class="fas fa-cart-plus"></i>Add to cart
+                                        </button>
+                                        <a href="sub.html" class="btn btn-small">More Info</a>
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Lucas</h4>
+                                    <!-- <span class="stars"></span> -->
+                                    <h4 class="price">
+                                        ₩<span class="priceValue">18000</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img src="./img/ring.jpg" alt="popular mobiles" />
+                                    <div class="product-over">
+                                        <button class="btn btn-small addToCart" data-product-id="8">
+                                            <i class="fas fa-cart-plus"></i>Add to cart
+                                        </button>
+                                        <a href="sub.html" class="btn btn-small">More Info</a>
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Ciel</h4>
+                                    <!-- <span class="stars"></span> -->
+                                    <h4 class="price">
+                                        ₩<span class="priceValue">18000</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img src="./img/nack.jpg" alt="popular mobiles" />
+                                    <div class="product-over">
+                                        <button class="btn btn-small addToCart" data-product-id="9">
+                                            <i class="fas fa-cart-plus"></i>Add to cart
+                                        </button>
+                                        <a href="sub.html" class="btn btn-small">More Info</a>
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Lucas</h4>
+                                    <!-- <span class="stars"></span> -->
+                                    <h4 class="price">
+                                        ₩<span class="priceValue">18000</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img src="./img/packshot.jpg" alt="popular mobiles" />
+                                    <div class="product-over">
+                                        <button class="btn btn-small addToCart" data-product-id="10">
+                                            <i class="fas fa-cart-plus"></i>Add to cart
+                                        </button>
+                                        <a href="sub.html" class="btn btn-small">More Info</a>
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Lucas</h4>
+                                    <!-- <span class="stars"></span> -->
+                                    <h4 class="price">
+                                        ₩<span class="priceValue">18000</span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="Review">
+        <h3>Review</h3>
+    </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="slide-cursor" style="display:block;"></div>
+
+            <div class="swiper-slide">
+                <img src="./img/dom-aguiar-eoR0Ou7js5E-unsplash.jpg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./img/joeyy-lee-hXhMzWysB8s-unsplash.jpg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./img/joeyy-lee-s8SJ8pmxPDA-unsplash.jpg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./img/kate-hliznitsova-ceSCZzjTReg-unsplash.jpg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./img/mike-von-qsJ5itg93WY-unsplash.jpg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./img/jonathan-sanchez-Ahxw0gICnKw-unsplash.jpg">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="/img/serafima-lazarenko-GNu7slSbdR0-unsplash.jpg">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-second">
+            <div class="footer-column-1">
+                <h3>News</h3>
+                <a href="#"></a>
+                <a href="#">Lorem ipsum</a>
+                <a href="#">dolor sit</a>
+            </div>
+            <div class="footer-column-2">
+                <h3>Customer service</h3>
+                <a href="#">Contact</a>
+                <a href="#">Track your order</a>
+                <a href="#">terms of purchase</a>
+                <a href="#">common questions</a>
+            </div>
+            <div class="footer-column-3">
+                <h3>About us</h3>
+                <a href="#">Who we are</a>
+                <a href="#">Our Services</a>
+                <a href="#">Events</a>
+                <a href="#">Data protection</a>
+            </div>
+        </div>
+        <ul class="footer-last">
+            <li>
+                <p><i class="fab fa-cc-mastercard"></i></p>
+            </li>
+            <li>
+                <p><i class="fab fa-cc-paypal"></i></p>
+            </li>
+            <li>
+                <p><i class="fab fa-cc-visa"></i></p>
+            </li>
+            <li>
+                <p><i class="fab fa-cc-amex"></i></p>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/cart.js"></script>
+    <!-- <script>
+        function scrollRotate() {
+            let image = document.getElementById("logo");
+            image.style.transform = "translateX(-50%) rotate(" + window.pageYOffset/2 + "deg)";
+        }
+
+        window.addEventListener('scroll',scrollRotate);
+
+        let headElem = document.querySelector('header');
+        window.addEventListener('scroll', function () {
+            console.log('a');
+            headElem.style.position = 'fixed';
+        });
+    </script> -->
+</body>
+
+</html>
